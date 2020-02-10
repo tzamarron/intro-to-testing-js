@@ -17,3 +17,11 @@ function isFive(input){
 function isEven(input) {
     return parseInt(input) % 2 === 0;
 }
+
+function isVowel(input) {
+    if (typeof input !== "string"){
+        return false;
+    } else {
+        return (input.toUpperCase()).indexOf("A") === 0;
+    }
+}
