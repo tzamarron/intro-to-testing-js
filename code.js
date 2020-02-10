@@ -4,7 +4,7 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-    if(input === undefined || typeof input === "boolean"){
+    if(typeof input !== "string" || input === "" || !isNaN(input)){
         return "Hello, World!";
     } else {
         return "Hello, " + input + "!";

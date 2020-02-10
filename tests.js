@@ -39,4 +39,20 @@ describe('sayHello', function() {
     it('should return the string "Hello, World!" when passed false', function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    it('should return the string "Hello, World!" when passed null', function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed an empty string', function () {
+        expect(sayHello("")).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed 2.3', function () {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed "5"', function () {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed an empty array', function () {
+        expect(sayHello([])).toBe("Hello, World!");
+    });
+
 });
