@@ -22,12 +22,21 @@ describe('sayHello', function() {
         expect(typeof sayHello()).toBe("string");
     });
     it('should return the string "Hello, Jane!" when executed', function () {
-        expect(sayHello()).toBe("Hello, Jane!");
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
     it('should return the string "Hello, Alex! when executed', function () {
         expect(sayHello("Alex")).toBe("Hello, Alex!");
     });
     it('should return the string "Hello, Pat " when executed', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it('should return the string "Hello, World!" when called', function () {
+        expect(sayHello()).toBe("Hello, World!")
+    });
+    it('should return the string "Hello, World! when passed true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when passed false', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
     });
 });
