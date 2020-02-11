@@ -10,6 +10,7 @@ function sayHello(input) {
         return "Hello, " + input + "!";
     }
 }
+
 function isFive(input){
     return input === 5;
 }
@@ -23,5 +24,13 @@ function isVowel(input) {
         return false;
     } else {
         return (input.toUpperCase()).indexOf("A") === 0;
+    }
+}
+
+function add(input1, input2){
+    if (isNaN(input1) || isNaN(input2)){
+        return NaN;
+    } else{
+        return parseFloat(input1) + parseFloat(input2);
     }
 }
