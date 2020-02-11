@@ -23,7 +23,29 @@ function isVowel(input) {
     if (typeof input !== "string"){
         return false;
     } else {
-        return (input.toUpperCase()).indexOf("A") === 0;
+        var result;
+        var trimmingString = input.trim();
+        switch (trimmingString.toUpperCase()) {
+            case "A":
+                result = true;
+                break;
+            case "E":
+                result = true;
+                break;
+            case "I":
+                result = true;
+                break;
+            case "O":
+                result = true;
+                break;
+            case "U":
+                result = true;
+                break;
+            default:
+                result = false;
+                break;
+        }
+        return result;
     }
 }
 
